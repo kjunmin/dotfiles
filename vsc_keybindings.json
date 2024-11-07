@@ -1,17 +1,17 @@
 // Place your key bindings in this file to override the defaults
 [
   {
-    "key": "ctrl+i",
+    "key": "cmd+i",
     "command": "workbench.action.terminal.toggleTerminal",
     "when": "editorFocus"
   },
   {
-    "key": "ctrl+w",
+    "key": "cmd+w",
     "command": "workbench.action.terminal.kill",
     "when": "terminalFocus"
   },
   {
-    "key": "ctrl+i",
+    "key": "cmd+i",
     "command": "workbench.action.terminal.split",
     "when": "terminalFocus"
   },
@@ -104,7 +104,8 @@
     "command": "editor.action.moveLinesDownAction",
     "when": "editorTextFocus && !editorReadOnly"
   },
-  { "key": "cmd+shift+i", "command": "workbench.action.splitEditor" },
+  { "key": "cmd+i", "command": "workbench.action.moveEditorToNextGroup", "when": "editorFocus && terminalViewShowing" },
+  { "key": "cmd+shift+i", "command": "workbench.action.moveEditorToPreviousGroup" },
   { "key": "shift+cmd+w", "command": "" },
   { "key": "cmd+j", "command": "" },
   {
